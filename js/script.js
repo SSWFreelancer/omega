@@ -68,4 +68,19 @@ $(document).ready(function () {
       $('.request-popup').removeClass('open');
       $('body').removeClass('lock');         
    });    
+   $('.cost__slider').slick({
+      arrows: false,
+      dots: false,
+      fade:true,
+      swipe:false,
+      slidesToShow: 1,
+      asNavFor: '.cost__navslider',      
+   });
+   $('.cost__navslider').slick({
+      arrows: false,
+      swipe:false,
+      slidesToShow: 3,
+      focusOnSelect: true,
+      asNavFor: '.cost__slider',     
+   });     
 }); 	
