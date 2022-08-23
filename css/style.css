@@ -1013,10 +1013,12 @@ body.lock {
     border-radius: 50%;
   }
   .request-popup__close:before {
-    left: 5px;
+    width: 30px;
+    left: 10px;
   }
   .request-popup__close:after {
-    left: 5px;
+    width: 30px;
+    left: 10px;
   }
 }
 .request-popup__title {

@@ -687,10 +687,12 @@ body.lock{
 		background: #E7F2F6;
 		border-radius: 50%;
 		&:before{
-			left: 5px;
+			width: 30px;
+			left: 10px;
 		}
 		&:after{
-			left: 5px;
+			width: 30px;
+			left: 10px;
 		}
 	  }	  			
 	}
