@@ -185,7 +185,6 @@ body{
 	&__container{
 		display: flex;
 		align-items: flex-start;
-		justify-content: space-between;
 		@media(max-width: 1100px){
 			flex-direction: column-reverse;
 		}
@@ -205,12 +204,15 @@ body{
 		position: relative;
 		@media(max-width: 1100px){
 			margin:25px 0 20px;
-			width: calc(320px + (600 - 320) * ((100vw - 320px) / (1100 - 320)));
+			width: calc(320px + (700 - 320) * ((100vw - 320px) / (1100 - 320)));
 			& img{
 				width: 100%;
 			}
 			align-self: center;
 		}	
+		@media(max-width: 500px){
+			width: 105vw;
+		}
 		& span{
 			position: absolute;  
 			background: #FFFFFF;
@@ -306,6 +308,7 @@ body{
 	}
 	&__body {
 		width: 100%;
+		display: flex; justify-content: center; align-items: center;
 	}
 	&__block {
 		display: none;
@@ -326,6 +329,7 @@ body{
 	svg.active .svg path.active{
 		opacity:0.75;
 	}
+	
 	.parking>a path{
 		opacity: 1;
 		&.body{
@@ -572,11 +576,12 @@ body{
 			}
 		}
 		& a{
-			display: block;
+			display: flex; justify-content: center; align-items: center;
+			width: 192px;
+			height: 51px;
 			margin-top: 23px;
 			background: #CC9018;
 			border-radius: 30px;
-			padding: 16px 38px;
 			font-weight: 700;
 			font-size: 14px;
 			line-height: 120%;
@@ -652,7 +657,7 @@ body.lock{
 	  &:before {
 			content: "";
 			position: absolute;
-			width: 30px;
+			width: 42px;
 			height: 3px;
 			left: 0;
 			background-color: #000;
@@ -663,7 +668,7 @@ body.lock{
 			content: "";
 			position: absolute;
 			transform: rotate(-45deg);
-			width: 30px;
+			width:42px;
 			height: 3px;
 			left: 0;
 			background-color: #000;

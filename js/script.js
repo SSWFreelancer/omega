@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    $('.content__block>svg').each(function(event){
+         var viewbox = $(this).attr("viewBox"); 
+         viewbox.split(/\s+|,/);
+         var width = viewbox[4] + viewbox[5] + viewbox[6];
+         var height = viewbox[8] + viewbox[9] + viewbox[10];
+         $(this).parent().css("width", parseFloat(width)); 
+         $(this).parent().css("max-height", parseFloat(height)); 
+    });  
+      $('<a class="x-other" href="#"><span></span></a>').insertBefore( ".top__container" );   
     $('.tabs__item').click(function (event) {
           $(this).addClass('active');
           $(".tabs__item").not(this).removeClass('active');
@@ -28,7 +37,6 @@ $(document).ready(function () {
         $('#tab_03').removeClass('target');
         $('#tab_02').removeClass('target');         
     });	
-
 	 $('.content__block svg .svg').mouseenter(function(event){
 	  		$('.content__block svg').addClass('active')
 	 });
@@ -36,11 +44,22 @@ $(document).ready(function () {
 	  		$('.content__block svg').removeClass('active')
 	 });
     $('.svg path').mouseenter(function(event){
-    	$(this).addClass('active');
+    	var source = $(this).data('source');
+      $('.svg path[data-source='+source+']').addClass('active');
     });	
     $('.svg path').mouseleave(function(event){
-    	$(this).removeClass('active');
-    });	 
+      var source = $(this).data('source');
+      $('.svg path').not($('.svg path[data-source='+source+']')).mouseenter(function(event){
+         $('.svg path[data-source='+source+']').removeClass('active');
+      });
+    });	    
+    $('.svg-footer path').mouseenter(function(event){
+      $(this).addClass('active');
+    });  
+    $('.svg-footer path').mouseleave(function(event){
+      $(this).removeClass('active');
+    });   
+     
     $('.content__block svg .parking a').mouseenter(function(event){
          $(this).addClass('active')
     });
