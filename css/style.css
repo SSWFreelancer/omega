@@ -355,6 +355,9 @@ body {
 .content__map {
   position: relative;
 }
+.content__map img {
+  width: 339px;
+}
 @media (max-width: 1100px) {
   .content__map {
     margin: 25px 0 20px;
