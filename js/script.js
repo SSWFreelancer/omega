@@ -1,12 +1,4 @@
 $(document).ready(function () {
-    $('.content__block>svg').each(function(event){
-         var viewbox = $(this).attr("viewBox"); 
-         viewbox.split(/\s+|,/);
-         var width = viewbox[4] + viewbox[5] + viewbox[6];
-         var height = viewbox[8] + viewbox[9] + viewbox[10];
-         $(this).parent().css("width", parseFloat(width)); 
-         $(this).parent().css("max-height", parseFloat(height)); 
-    });  
       $('<a class="x-other" href="#"><span></span></a>').insertBefore( ".top__container" );   
     $('.tabs__item').click(function (event) {
           $(this).addClass('active');

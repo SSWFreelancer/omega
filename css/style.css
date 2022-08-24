@@ -505,6 +505,7 @@ body {
 }
 .content__block svg {
   width: 100%;
+  max-height: 630px;
 }
 .content .svg path {
   -webkit-transition: all 0.1s ease 0s;
