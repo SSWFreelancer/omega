@@ -201,14 +201,11 @@ body{
 		}
 	}
 	&__map {
-		position: relative;
-		& img{
-			display: none;
-		}		
+		position: relative;	
 		@media(max-width: 1100px){
 			margin:25px 0 20px;
 			width: calc(320px + (700 - 320) * ((100vw - 320px) / (1100 - 320)));
-			& svg{
+			& img{
 				width: 100%;
 			}
 			align-self: center;
@@ -240,47 +237,47 @@ body{
 				color: #FFFFFF;
 				background: #2E6E85;
 			}
-			&:nth-child(3){
+			&:nth-child(2){
 				top:19.8%;
 				left: 39%;
 			}
-			&:nth-child(4){
+			&:nth-child(3){
 				top:24%;
 				left: 46.6%;
 			}	
-			&:nth-child(5){
+			&:nth-child(4){
 				top:30%;
 				right: 38%;
 			}
-			&:nth-child(6){
+			&:nth-child(5){
 				top:36.4%;
 				right: 44%;
 			}	
-			&:nth-child(7){
+			&:nth-child(6){
 				top:calc(33/233*100%);
 				left: calc(135/414*100%);
 			}	
-			&:nth-child(8){
+			&:nth-child(7){
 				top:calc(22/233*100%);
 				left: calc(106/414*100%);
 			}	
-			&:nth-child(9){
+			&:nth-child(8){
 				top:calc(9/233*100%);
 				left: calc(60/414*100%);
 			}	
-			&:nth-child(10){
+			&:nth-child(9){
 				top:calc(21/233*100%);
 				left: calc(40/414*100%);
 			}	
-			&:nth-child(11){
+			&:nth-child(10){
 				top:calc(65/233*100%);
 				left: calc(149/414*100%);
 			}	
-			&:nth-child(12){
+			&:nth-child(11){
 				top:calc(38/233*100%);
 				left: calc(67/414*100%);
 			}	
-			&:nth-child(13){
+			&:nth-child(12){
 				width: 59px;
 				top:calc(108/233*100%);
 				right: calc(33/414*100%);
