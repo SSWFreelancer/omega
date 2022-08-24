@@ -354,6 +354,16 @@ body {
 }
 .content__map {
   position: relative;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
+  filter: none;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=‘0’);
 }
 @media (max-width: 1100px) {
   .content__map {
@@ -365,6 +375,16 @@ body {
   }
   .content__map img {
     width: 100%;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    -webkit-font-smoothing: subpixel-antialiased;
+    filter: none;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=‘0’);
   }
 }
 @media (max-width: 500px) {
